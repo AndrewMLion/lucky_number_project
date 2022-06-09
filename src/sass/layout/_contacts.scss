@@ -10,6 +10,7 @@
   height: 16px;
   background: #f0d1a5;
   border-radius: 4px;
+
   display: flex;
   align-items: center;
   text-align: center;
@@ -21,7 +22,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
-  text-transform: uppercase;
+
   // display: flex;
   // align-items: center;
   // text-align: center;
@@ -31,4 +32,13 @@
 }
 .obert {
   padding: 40px 32px;
+}
+.line {
+  border: 1px solid #e1e1e1;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.button {
+  display: flex;
+  flex-direction: column;
 }
