@@ -1,0 +1,14 @@
+.gallery {
+  background-image: linear-gradient(to bottom,
+      #FFF5F6 39%,
+      white 40%,
+    );
+
+  &_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // transition: transform 350ms;
+    // animation-name: rotateY infinite alternate backwards ease-in-out 1000ms;
+  }
+}
