@@ -1,23 +1,26 @@
 .footer {
   background-color: $color-background;
   padding-top: 32px;
-  padding-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+  }
 }
-.btn {
-  display: block;
-  cursor: pointer;
-  font-family: 'DM Sans';
-  font-style: normal;
-  border: none;
-  border-radius: 22px;
-}
+
 .footer__btn {
+  display: block;
   margin: 0 auto;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
   height: 44px;
   width: 161px;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
 }
 .btn__icon {
   margin-left: 8px;
@@ -27,6 +30,10 @@
   background-color: #d41342;
   color: $color-text-white;
   fill: $color-text-white;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 14.5px;
+  }
 }
 .footer__btn--white {
   background-color: $color-text-white;
@@ -34,7 +41,15 @@
   fill: $color-text-red;
 }
 .footer__buttons {
+  margin: 0 auto;
   margin-bottom: 48px;
+  @media screen and (min-width: 768px) {
+    width: 380px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
 }
 .footer__text {
   width: 234px;
@@ -82,6 +97,7 @@
 .contact-text {
   margin-bottom: 0;
   font-weight: 700;
+  font-size: 12px;
   line-height: 1.9;
   text-align: right;
   .contact-text__link {
@@ -95,13 +111,21 @@
   border-bottom: 1px solid #e1e1e1;
 }
 .footer__copyright {
-  padding-top: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    .text-brake {
+      display: block;
+    }
+  }
 }
 .footer__copyright-text {
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 152%;
+  line-height: 1.5;
   text-align: center;
   color: #907e82;
-  width: 140px;
 }
