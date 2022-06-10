@@ -158,6 +158,9 @@
   .contact-text__link {
     text-decoration: none;
     color: $color-text-red;
+    @media screen and (max-width: 290px) {
+      display: block;
+    }
   }
 }
 .footer-underline {
