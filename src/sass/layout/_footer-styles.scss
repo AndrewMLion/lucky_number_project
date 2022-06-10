@@ -67,6 +67,7 @@
   }
   @media screen and (min-width: 1280px) {
     width: 393px;
+    margin-bottom: 120px;
   }
 }
 .footer__text {
@@ -83,6 +84,7 @@
   @media screen and (min-width: 1280px) {
     width: 475px;
     margin-bottom: 0px;
+    flex-grow: 1;
   }
 
   .footer__text-small {
@@ -93,6 +95,9 @@
       font-size: 26px;
       letter-spacing: 0.04em;
     }
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+    }
   }
   .footer__text-big {
     font-size: 34px;
@@ -102,6 +107,9 @@
       margin-bottom: 0px;
       font-size: 48px;
       letter-spacing: 0.06em;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
     }
   }
 }
@@ -183,5 +191,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+  }
+  @media screen and (min-width: 1280px) {
+    align-items: center;
   }
 }
