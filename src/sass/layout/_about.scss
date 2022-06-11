@@ -223,6 +223,10 @@
     font-size: 14px;
     line-height: 1.28;
   }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 .about_btn-arrow {
   position: absolute;
