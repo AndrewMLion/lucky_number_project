@@ -42,6 +42,14 @@
     margin-bottom: 0;
 
     flex-basis: calc((100% - 96px) / 3);
+
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 500ms;
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+      z-index: 2;
+    }
   }
   @media screen and(min-width:1279.98px) {
     max-width: 395px;
@@ -87,6 +95,7 @@
   }
 }
 .contacts-town {
+  height: 66px;
   @media screen and (min-width: 767.98px) {
     height: 103px;
   }
@@ -130,6 +139,7 @@
   }
 }
 .contacts-schedule {
+  height: 97px;
   @media screen and (min-width: 767.98px) {
     height: 109px;
   }
@@ -178,6 +188,7 @@
   }
 }
 .contacts-contacts {
+  height: 37px;
   @media screen and (min-width: 767.98px) {
     height: 48px;
   }
@@ -208,7 +219,6 @@
   }
 }
 .line {
-  border: 1px solid #e1e1e1;
   margin-top: 24px;
   margin-bottom: 24px;
   @media screen and (min-width: 767.98px) {
