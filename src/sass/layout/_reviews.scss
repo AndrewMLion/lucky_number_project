@@ -1,0 +1,115 @@
+.reviews{
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+      /*&__list{
+      display: flex;
+
+      }*/
+
+      &__client{
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 16px;
+      }
+
+      &__thumb{
+      margin-left: auto;  
+      margin-right: auto;
+      margin-bottom: 16px;
+      padding: 30px 50px 17px 50px;
+
+      width: 280px;
+      text-align: center;
+      background-color: $color-background-reviews;
+
+      @media screen and (min-width:768px) {
+      width: 620px;
+      padding: 20px 6px 36px 6px;     
+      }
+
+      @media screen and (min-width:1280px) {
+      width: 1034px;
+      padding: 32px 107px 31px 105px;     
+      }
+      
+      &--overley{
+      position: relative;
+
+      background-image: repeating-linear-gradient(to bottom, 
+      $color-background-reviews,
+      $color-background-reviews 30px,
+      $color-linear-reviews 31px,
+      $color-linear-reviews 1px);
+
+            &::before{
+                  position: absolute;
+                  content:" ";
+                  top: 0;
+                  left: 0;
+                  opacity: 0.5;
+
+                  width: 54px;
+                  height: 40px;
+
+                  background-image: url('../images/customer-reviews/quotes.png');
+            }      
+      }
+      }
+
+      &__text{
+      padding: 13px 8px 9px 15px;
+      margin-bottom: 0;
+
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 2.55;
+      text-align: center;
+
+      color:$color-text-primary;
+
+     @media screen and (min-width:768px) {
+      font-size: 14px;
+      line-height: 2.16;
+      padding: 17px 49px 8px 45px;      
+      }
+
+      @media screen and (min-width:1280px) {
+      font-size: 16px;
+      line-height: 1.86;
+      padding: 15px 35px 8px 37px;     
+      }     
+      }
+
+      &__adress{
+      text-align: center;
+      margin-bottom: 32px;
+
+      font-size: 14px;
+      line-height: 1.86;
+
+      color: $color-text-primary;
+
+      @media screen and (min-width:768px){
+      font-size: 16px
+      }
+
+      @media screen and (min-width:1280px){
+      font-size: 20px;
+      }
+      
+            &::before{
+            content: " ";
+            display: block;
+            width: 32px;
+            height: 4px;
+            top: -16px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            transform: translateY(-50%);
+
+            background-image: url('../images/customer-reviews/red_points.png');
+            }
+      }
+}
