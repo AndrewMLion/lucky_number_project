@@ -30,13 +30,13 @@
 .contacts-card__item {
   margin: 0 auto;
   padding: 40px 32px;
-  width: 280px;
+  max-width: 280px;
   height: 412px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   margin-bottom: 20px;
   @media screen and(min-width:767.98px) {
-    width: 224px;
+    max-width: 224px;
     height: 528px;
     margin-right: 32px;
     margin-bottom: 0;
@@ -44,7 +44,7 @@
     flex-basis: calc((100% - 96px) / 3);
   }
   @media screen and(min-width:1279.98px) {
-    width: 395px;
+    max-width: 395px;
     height: 538px;
     margin-right: 32px;
     padding: 40px;
