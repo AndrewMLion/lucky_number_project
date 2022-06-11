@@ -1,8 +1,16 @@
 .gallery {
+  padding-top:40px;
+  padding-bottom:40px;
+
+  @media screen and (min-width:1280px){
+    padding-top:60px;
+    padding-bottom: 60px;
+  }
+
   background: linear-gradient(to bottom,
-      $color-background 25%, $color-background 39.9%,  white 25%);
+      $color-background 42%, $color-background 39.9%, white 10%);
     background: linear-gradient(to bottom,
-      $color-background 25%, $color-background 39.9%, white 25%);
+      $color-background 42%, $color-background 39.9%, white 10%);
 
   &_item {
     display: flex;
