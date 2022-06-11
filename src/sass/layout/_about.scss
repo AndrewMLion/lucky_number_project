@@ -226,6 +226,7 @@
   &:hover,
   &:focus {
     cursor: pointer;
+    background-color: #ecebeb;
   }
 }
 .about_btn-arrow {
@@ -233,6 +234,4 @@
 
   top: 42%;
   right: 25px;
-
-  background-color: white;
 }
