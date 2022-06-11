@@ -6,9 +6,15 @@ h4,
 h5,
 h6,
 p {
+// <<<<<<< feature/contacts
+//   margin-top: 0;
+//   margin-bottom: 0;
+} /* Класс для обнуления базовых свойств у списков (ul) */
+=======
   margin: 0;
 }
 /* Класс для обнуления базовых свойств у списков (ul) */
+// >>>>>>> main
 .list {
   list-style: none;
   padding-left: 0;
