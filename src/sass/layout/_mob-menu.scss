@@ -54,8 +54,13 @@
   padding: 0;
   color: #d41443;
   margin-bottom: 32px;
+  cursor: pointer;
   @media screen and (min-width: 768px) {
     width: 186px;
+  }
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
   }
 }
 .submit-icon {
@@ -85,7 +90,8 @@
   font-size: 14px;
   line-height: 1.28;
   color: #ffffff;
-}
-.mob-nav_link.current {
-  color: #d41443;
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
 }
