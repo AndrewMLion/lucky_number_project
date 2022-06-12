@@ -37,9 +37,9 @@
       padding: 37px 6px 36px 6px;
     }
 
-    @media (min-width: 768px) and (max-width: 1279px) {
-      margin-bottom: 4px;
-    }
+    // @media (min-width: 768px) and (max-width: 1279px) {
+    //   margin-bottom: 4px;
+    // }
 
     @media screen and (min-width: 1280px) {
       width: 1034px;
@@ -70,6 +70,7 @@
     }
 
     &--overley {
+      height: 94px;
       background-image: repeating-linear-gradient(
         to bottom,
         $color-background-reviews,
