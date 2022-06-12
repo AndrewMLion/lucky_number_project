@@ -295,6 +295,8 @@
   height: 100%;
 }
 .hero-bottom-box {
+  position: relative;
+  z-index: 3;
   align-items: center;
   text-align: left;
   display: none;
@@ -311,7 +313,12 @@
   width: 100%;
 }
 .hero-bottom {
-  width: 200px;
+  @media screen and (min-width: 768px) {
+    width: 116px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+  }
 }
 .hero_bottom__text {
   display: none;
@@ -319,8 +326,9 @@
   font-weight: 400;
   @media screen and (min-width: 768px) {
     display: block;
+    // max-width: 114px;
     font-size: 8px;
-    line-height: 150%;
+    line-height: 1.5;
     margin-bottom: 7px;
   }
   @media screen and (min-width: 1280px) {
