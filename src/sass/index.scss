@@ -1,3 +1,6 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+
 @import './base/reset';
 @import './base/common';
 
@@ -6,5 +9,8 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
-@import './components/container';
 @import './layout/products';
+@import './layout/about';
+@import './layout/gallery';
+@import './layout/contacts';
+@import './layout/footer-styles';
