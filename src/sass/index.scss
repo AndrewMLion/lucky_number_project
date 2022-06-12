@@ -1,6 +1,19 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+
 @import './base/reset';
 @import './base/common';
 
+@import './components/container';
+
 @import './utils/variables';
 @import './utils/visually-hidden';
-@import './layout/_mob-menu';
+
+@import './layout/mob-menu';
+
+@import './layout/products';
+@import './layout/about';
+@import './layout/gallery';
+@import './layout/reviews';
+@import './layout/contacts';
+@import './layout/footer-styles';
