@@ -222,13 +222,25 @@
   // transform: translatey(100%);
   border-radius: 10px;
   &_list {
-    padding: 10px;
+    padding: 20px 10px;
     margin: 0;
     list-style: none;
   }
   &_list li + li {
     padding-top: 20px;
   }
+}
+.modal.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal_btn-close {
+  position: absolute;
+  top: 5px;
+  right: 3px;
+  background-color: #f2cdd6;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
 }
 // .about_btn:hover .modal {
 //   transform: translatey(0);
