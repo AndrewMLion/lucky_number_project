@@ -131,6 +131,8 @@
 }
 
 .about_item {
+  position: relative;
+  overflow-y: hidden;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -205,6 +207,33 @@
   }
 }
 
+.about_btn-arrow {
+  position: absolute;
+
+  top: 42%;
+  right: 25px;
+}
+
+.modal {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #f2cdd6;
+  // transform: translatey(100%);
+  border-radius: 10px;
+  &_list {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+  }
+  &_list li + li {
+    padding-top: 20px;
+  }
+}
+// .about_btn:hover .modal {
+//   transform: translatey(0);
+// }
+
 .about_btn {
   position: relative;
   display: flex;
@@ -230,10 +259,4 @@
     cursor: pointer;
     background-color: #ecebeb;
   }
-}
-.about_btn-arrow {
-  position: absolute;
-
-  top: 42%;
-  right: 25px;
 }
