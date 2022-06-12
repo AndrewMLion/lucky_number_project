@@ -257,9 +257,7 @@
 .products-list__title::after {
   content: '';
   display: block;
-  margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin: 32px auto;
   width: 26px;
   height: 6px;
   background-image: url('../images/products/product-after.png');
