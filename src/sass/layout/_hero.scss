@@ -46,6 +46,15 @@
   line-height: 1.31;
   align-items: center;
   color: #ffffff;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: #d41443;
+  }
+  &:focus {
+    color: #d41443;
+  }
 }
 .mob-menu-btn {
   z-index: 2;
