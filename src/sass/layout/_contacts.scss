@@ -7,6 +7,19 @@
 
   background: linear-gradient(180deg, #ffffff 375px, #fff5f6 375px);
 
+  background: linear-gradient(
+    to top,
+    $color-background 67%,
+    $color-background 39.9%,
+    white 10%
+  );
+  background: linear-gradient(
+    to top,
+    $color-background 67%,
+    $color-background 39.9%,
+    white 10%
+  );
+
   @media screen and (min-width: 767.98px) {
     padding-top: 80px;
     background: linear-gradient(180deg, #ffffff 206px, #fff5f6 206px);
@@ -19,16 +32,16 @@
   }
 }
 .contacts-card {
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
   @media screen and(min-width:767.98px) {
     display: flex;
     flex-wrap: wrap;
     margin-right: -32px;
 
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
   }
   @media screen and(min-width:1279.98px) {
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
 }
 
@@ -41,7 +54,13 @@
   background-color: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  background-color: #ffffff;
+
+  cursor: pointer;
   @media screen and(min-width:767.98px) {
     max-width: 224px;
     height: 528px;

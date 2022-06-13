@@ -1,0 +1,220 @@
+.backdrop {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms, visibility 250ms, transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-buy-now {
+  width: 93%;
+  height: 93%;
+  padding: 15px;
+  @media screen and (min-width: 320px) {
+    width: 290px;
+    height: 620px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 390px;
+    height: 580px;
+    padding: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 528px;
+    height: 581px;
+  }
+
+  background: $color-background-pink;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(223, 88, 88, 0.1);
+  padding: 5px;
+  fill: $color-text-red;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: $color-hoverfocus-red;
+  }
+}
+.modaL-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $color-text-white;
+  margin-bottom: 12px;
+}
+.modal-box {
+  position: relative;
+  margin-bottom: 10px;
+}
+.modal-input {
+  background-color: $color-hoverfocus-gray;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(223, 88, 88, 0.1);
+  border-radius: 4px;
+  padding-left: 40px;
+  outline: none;
+  transition: border-color 250 ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $color-text-red;
+  }
+  &:hover,
+  &:focus + .modal-input__icon {
+    fill: $color-text-red;
+  }
+}
+.modal-input__icon {
+  position: absolute;
+  fill: $color-text-pink;
+  left: 15px;
+  top: 50%;
+  transform: translate(-50%);
+}
+.modal-lable {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 4px;
+  display: block;
+  @media screen and (min-width: 768px) {
+    letter-spacing: 0.01em;
+  }
+}
+.modal-submit-btn {
+  display: block;
+  align-items: center;
+  cursor: pointer;
+  width: 198px;
+  height: 50px;
+  margin: 5px auto;
+  background: $color-text-white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  border: 1px solid $color-text-white;
+  transition: background-color 250ms, border 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: $color-hoverfocus-gray;
+    border: 1px solid $color-hoverfocus-gray;
+  }
+}
+.modal-btn-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background: $color-text-white;
+  border: 1px solid $color-text-white;
+  color: $color-text-red;
+  text-align: center;
+  &:hover,
+  &:focus {
+    background: $color-hoverfocus-gray;
+    border: 1px solid $color-hoverfocus-gray;
+  }
+}
+.modal-text {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  background-color: $color-hoverfocus-gray;
+  resize: none;
+  border-color: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $color-text-pink;
+  }
+  &:hover,
+  &:focus + .modal-input__icon {
+    fill: $color-text-pink;
+  }
+}
+.modal-input-box {
+  margin-bottom: 20px;
+}
+.modal-check-box {
+  margin-bottom: 30px;
+}
+.modal-check-text {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $color-text-pink;
+  text-align: center;
+  align-items: center;
+  & a {
+    text-decoration-line: underline;
+    color: $color-text-red;
+  }
+}
+.check-icon {
+  fill: transparent;
+  cursor: pointer;
+}
+.modal-vis-check {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  padding-top: 2px;
+  border-radius: 3px;
+  border: 2px solid $color-text-red;
+  margin-right: 5px;
+  align-content: center;
+  justify-content: center;
+  .modal-chekid:checked + .modal-check-text & {
+    background-color: $color-text-pink;
+    border: 2px solid $color-text-red;
+  }
+  .modal-chekid:checked + .modal-check-text & svg {
+    fill: $color-text-red;
+  }
+}
+.modal-licen-text {
+  color: $color-text-white;
+  display: inline-block;
+  @media screen and (min-width: 320px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 30px;
+    font-size: 16px;
+  }
+}

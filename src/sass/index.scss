@@ -1,8 +1,22 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+
 @import './base/reset';
 @import './base/common';
 
+@import './components/container';
+@import './components/modal';
+
 @import './utils/variables';
 @import './utils/visually-hidden';
-@import './components/container';
 
+@import './layout/hero';
+@import './layout/mob-menu';
+
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/reviews';
 @import './layout/contacts';
+@import './layout/footer-styles';
