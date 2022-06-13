@@ -1,5 +1,5 @@
 .hero {
-  background-color: #ffb8ca;
+  background-color: $color-background-pink;
   position: relative;
   display: flex;
   align-items: center;
@@ -45,15 +45,13 @@
   font-size: 16px;
   line-height: 1.31;
   align-items: center;
-  color: #ffffff;
+  color: $color-text-white;
   transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    color: #d41443;
-  }
+  &:hover,
   &:focus {
-    color: #d41443;
+    color: $color-text-red;
   }
 }
 .mob-menu-btn {
@@ -64,7 +62,7 @@
   right: 20px;
   background-color: transparent;
   border-color: transparent;
-  fill: #d41443;
+  fill: $color-text-red;
   cursor: pointer;
   border: none;
   padding: 0;
@@ -82,13 +80,13 @@
   display: flex;
 }
 .hero-icon-mark {
-  fill: #d41443;
+  fill: $color-text-red;
   margin-left: 12px;
 }
 
 .hero__btn {
   position: absolute;
-  background-color: #ffffff;
+  background-color: $color-text-white;
   display: none;
   cursor: pointer;
   align-items: start;
@@ -110,13 +108,10 @@
     top: 40px;
     right: 16px;
   }
-  &:hover {
-    background-color: #ecebeb;
-    color: #d41443;
-  }
+  &:hover,
   &:focus {
-    background-color: #ecebeb;
-    color: #d41443;
+    background-color: $color-hoverfocus-gray;
+    color: $color-text-red;
   }
 }
 .hero-button__text {
@@ -124,7 +119,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31px;
-  color: #d41443;
+  color: $color-text-red;
 }
 .hero-title {
   position: relative;
@@ -149,7 +144,7 @@
   }
 }
 .hero-top-title {
-  color: #ffffff;
+  color: $color-text-white;
   font-size: 26px;
   line-height: calc(29.77 / 26);
   @media screen and (min-width: 768px) {
@@ -164,7 +159,7 @@
 .hero-bottom-title {
   font-size: 48px;
   line-height: calc(46.32 / 48);
-  color: #d41443;
+  color: $color-text-red;
   @media screen and (min-width: 768px) {
     font-size: 34px;
     line-height: 0.9;
@@ -222,8 +217,8 @@
 }
 
 .hero__btn__first {
-  background-color: #d41443;
-  color: #ffffff;
+  background-color: $color-text-red;
+  color: $color-text-white;
   cursor: pointer;
   transition: background-color 250ms, color 250ms, box-shadow 250ms,
     border-radius 250ms;
@@ -232,20 +227,17 @@
   text-align: center;
   padding: 13px 21px;
   border-radius: 20px;
-  &:hover {
-    background-color: #c7133e;
-    color: #ffffff;
-  }
+  &:hover,
   &:focus {
-    background-color: #c7133e;
-    color: #ffffff;
+    background-color: $color-hoverfocus-red;
+    color: $color-text-white;
   }
 }
 .hero__btn__last {
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: $color-text-white;
   border-style: none;
-  color: #d41443;
+  color: $color-text-red;
   transition: background-color 250ms, color 250ms, drop-shadow 250ms,
     border-radius 250ms;
   align-items: start;
@@ -255,19 +247,19 @@
   // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
   //   drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   &:hover {
-    background-color: #ecebeb;
-    color: #d41443;
+    background-color: $color-hoverfocus-gray;
+    color: $color-text-red;
   }
   &:focus {
-    background-color: #ecebeb;
-    color: #d41443;
+    background-color: $color-hoverfocus-gray;
+    color: $color-text-red;
   }
 }
 .hero-cicle {
   z-index: 1;
   position: absolute;
   border-radius: 50%;
-  background-color: #ffa5ba;
+  background-color: $color-text-pink;
 
   @media screen and (min-width: 320px) {
     top: 83px;
@@ -337,7 +329,7 @@
 }
 .hero_bottom__text {
   display: none;
-  color: #ffffff;
+  color: $color-text-white;
   font-weight: 400;
   @media screen and (min-width: 768px) {
     display: block;
@@ -354,8 +346,8 @@
   }
 }
 .hero_icon {
-  fill: #d41443;
-  background-color: #ffffff;
+  fill: $color-text-red;
+  background-color: $color-text-white;
   display: none;
   align-items: center;
   justify-content: center;
