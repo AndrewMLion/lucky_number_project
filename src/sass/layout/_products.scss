@@ -257,9 +257,7 @@
 .products-list__title::after {
   content: '';
   display: block;
-  margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin: 32px auto;
   width: 26px;
   height: 6px;
   background-image: url('../images/products/product-after.png');
@@ -304,14 +302,14 @@
   border: none;
   outline: none;
   border-radius: 50%;
-}
-
-.products-btn__icon {
-  fill: $color-text-red;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     transform: rotate(-90deg);
   }
+}
+
+.products-btn__icon {
+  fill: $color-text-red;
 }
