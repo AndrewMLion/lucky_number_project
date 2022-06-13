@@ -60,11 +60,11 @@
   text-align: center;
   width: 209px;
   height: 44px;
-  background: #ffffff;
+  background: $color-text-white;
   border-radius: 22px;
   border: none;
   padding: 0;
-  color: #d41443;
+  color: $color-text-red;
   margin-bottom: 32px;
   cursor: pointer;
   @media screen and (min-width: 768px) {
@@ -76,7 +76,7 @@
   }
 }
 .submit-icon {
-  fill: #d41443;
+  fill: $color-text-red;
   margin-left: 15.77px;
   @media screen and (min-width: 768px) {
     margin-left: 14.04px;
@@ -101,9 +101,9 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
-  color: #ffffff;
-  &:hover,
-  &:focus {
-    color: #d41443;
-  }
+
+  color: $color-text-white;
+}
+.mob-nav_link.current {
+  color: $color-text-red;
 }
