@@ -26,7 +26,7 @@
     height: 581px;
   }
 
-  background: #ffb8ca;
+  background: $color-background-pink;
   border-radius: 4px;
   position: absolute;
   top: 50%;
@@ -43,14 +43,14 @@
   background-color: transparent;
   border: 1px solid rgba(223, 88, 88, 0.1);
   padding: 5px;
-  fill: #d41443;
+  fill: $color-text-red;
   cursor: pointer;
 
   &:focus {
-    fill: #c7133e;
+    fill: $color-hoverfocus-red;
   }
   &:hover {
-    fill: #c7133e;
+    fill: $color-hoverfocus-red;
   }
 }
 .modaL-title {
@@ -59,7 +59,7 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: $color-text-white;
   margin-bottom: 12px;
 }
 .modal-box {
@@ -67,7 +67,7 @@
   margin-bottom: 10px;
 }
 .modal-input {
-  background-color: #ecebeb;
+  background-color: $color-hoverfocus-gray;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(223, 88, 88, 0.1);
@@ -78,21 +78,21 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {
-    border-color: #d41443;
+    border-color: $color-text-red;
   }
   &:focus + .modal-input__icon {
-    fill: #d41443;
+    fill: $color-text-red;
   }
   &:hover {
-    border-color: #d41443;
+    border-color: $color-text-red;
   }
   &:hover + .modal-input__icon {
-    fill: #d41443;
+    fill: $color-text-red;
   }
 }
 .modal-input__icon {
   position: absolute;
-  fill: #ffa5ba;
+  fill: $color-text-pink;
   left: 15px;
   top: 50%;
   transform: translate(-50%);
@@ -115,21 +115,21 @@
   width: 198px;
   height: 50px;
   margin: 5px auto;
-  background: #ffffff;
+  background: $color-text-white;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 4px;
-  border: 1px solid #ffffff;
+  border: 1px solid $color-text-white;
   transition: background-color 250ms, border 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background: #ecebeb;
-    border: 1px solid #ecebeb;
+    background: $color-hoverfocus-gray;
+    border: 1px solid $color-hoverfocus-gray;
   }
   &:focus {
-    background: #ecebeb;
-    border: 1px solid #ecebeb;
+    background: $color-hoverfocus-gray;
+    border: 1px solid $color-hoverfocus-gray;
   }
 }
 .modal-btn-text {
@@ -137,17 +137,17 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  background: #ffffff;
-  border: 1px solid #ffffff;
-  color: #d41443;
+  background: $color-text-white;
+  border: 1px solid $color-text-white;
+  color: $color-text-red;
   text-align: center;
   &:hover {
-    background: #ecebeb;
-    border: 1px solid #ecebeb;
+    background: $color-hoverfocus-gray;
+    border: 1px solid $color-hoverfocus-gray;
   }
   &:focus {
-    background: #ecebeb;
-    border: 1px solid #ecebeb;
+    background: $color-hoverfocus-gray;
+    border: 1px solid $color-hoverfocus-gray;
   }
 }
 .modal-text {
@@ -157,7 +157,7 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  background-color: #ecebeb;
+  background-color: $color-hoverfocus-gray;
   resize: none;
   border-color: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -165,16 +165,16 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {
-    border-color: #ffa5ba;
+    border-color: $color-text-pink;
   }
   &:focus + .modal-input__icon {
-    fill: #ffa5ba;
+    fill: $color-text-pink;
   }
   &:hover {
-    border-color: #ffa5ba;
+    border-color: $color-text-pink;
   }
   &:hover + .modal-input__icon {
-    fill: #ffa5ba;
+    fill: $color-text-pink;
   }
 }
 .modal-input-box {
@@ -188,12 +188,12 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffa5ba;
+  color: $color-text-pink;
   text-align: center;
   align-items: center;
   & a {
     text-decoration-line: underline;
-    color: #d41443;
+    color: $color-text-red;
   }
 }
 .check-icon {
@@ -206,20 +206,20 @@
   height: 15px;
   padding-top: 2px;
   border-radius: 3px;
-  border: 2px solid #d41443;
+  border: 2px solid $color-text-red;
   margin-right: 5px;
   align-content: center;
   justify-content: center;
   .modal-chekid:checked + .modal-check-text & {
-    background-color: #ffa5ba;
-    border: 2px solid #d41443;
+    background-color: $color-text-pink;
+    border: 2px solid $color-text-red;
   }
   .modal-chekid:checked + .modal-check-text & svg {
-    fill: #d41443;
+    fill: $color-text-red;
   }
 }
 .modal-licen-text {
-  color: #ffffff;
+  color: $color-text-white;
   display: inline-block;
   @media screen and (min-width: 320px) {
     font-size: 12px;
