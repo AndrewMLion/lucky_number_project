@@ -241,8 +241,8 @@
   // }
 }
 .backdrop {
-  .is-hidden {
-    .modal {
+  .map-hidden {
+    .map {
       transform: scale(2.5);
       opacity: 0.2;
     }
@@ -267,7 +267,7 @@
     border: 1px solid $color-hoverfocus-red;
   }
 }
-.is-hidden {
+.map-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
