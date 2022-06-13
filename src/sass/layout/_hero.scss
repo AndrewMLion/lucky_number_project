@@ -224,6 +224,7 @@
 .hero__btn__first {
   background-color: #d41443;
   color: #ffffff;
+  cursor: pointer;
   transition: background-color 250ms, color 250ms, box-shadow 250ms,
     border-radius 250ms;
   border-style: none;
@@ -241,6 +242,7 @@
   }
 }
 .hero__btn__last {
+  cursor: pointer;
   background-color: #ffffff;
   border-style: none;
   color: #d41443;
@@ -361,7 +363,6 @@
   padding: 0;
   border: none;
   outline: none;
-
   border-radius: 50%;
   cursor: pointer;
   display: none;
