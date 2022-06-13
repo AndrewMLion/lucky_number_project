@@ -7,7 +7,7 @@
   padding-bottom: 20px;
   background: #e17992;
   min-width: 250px;
-  height: 512px;
+  height: 502px;
   transform: translateX(100%);
   transition: transform 250ms linear;
 
@@ -26,14 +26,26 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 14px;
-  max-height: 14px;
+  min-width: 14px;
+  min-height: 14px;
   padding: 0;
-  display: block;
   margin-left: auto;
   border: 0;
   background-color: transparent;
   cursor: pointer;
+  &:focus,
+  &:hover {
+    fill: #d41443;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.mob-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .mob-menu_btn-wrap {
   text-align: center;
