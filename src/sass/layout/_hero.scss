@@ -365,6 +365,10 @@
     width: 26px;
     display: flex;
   }
+  &:hover,
+  &:focus {
+    transform: rotate(-90deg);
+  }
 }
 .hero_icon__svg {
   height: 6px;
@@ -373,10 +377,6 @@
   @media screen and (min-width: 1280px) {
     height: 13px;
     width: 13px;
-  }
-  &:hover,
-  &:focus {
-    transform: rotate(-90deg);
   }
 }
 

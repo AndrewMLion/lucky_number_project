@@ -1,9 +1,6 @@
 const scrollUp = document.querySelector('.scroll-top');
 scrollUp.addEventListener('click', function (e) {
-  document.querySelector('#header').scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
-  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 window.addEventListener('scroll', function (e) {
