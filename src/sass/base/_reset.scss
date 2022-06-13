@@ -38,3 +38,6 @@ address {
   pointer-events: none;
   position: absolute;
 }
+.no-scroll {
+  overflow: hidden;
+}
