@@ -1,168 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IceCream</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
+<section class="contacts">
+  <div class="container">
+    <p id="contacts"></p>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-
-  <body>
-    <section class="contacts">
-      <div class="container">
-        <p id="contacts"></p>
-
-        <h2 class="visually-hidden">Contacts</h2>
-        <ul class="contacts-card list">
-          <!-- 1 -->
-          <li class="contacts-card__item">
-            <div class="contacts-representation">
-              <p class="contacts-representation__name">CAFE</p>
-            </div>
-            <div class="contacts-town">
-              <h3 class="contacts-town__name">Chicago</h3>
-              <p class="contacts-town__info">
-                Fusce ut velit laoreet, tempus arcu molestie vulputate
-              </p>
-            </div>
-            <hr size="1px" width="100%" color="#E1E1E1" class="line" />
-            <!-- <div class="line"></div> -->
-            <ul class="contacts-schedule list">
-              <li class="contacts-schedule__item">
-                <p class="contacts-schedule__day">Monday - Friday</p>
-                <p class="contacts-schedule__time">06:00 AM - 10:00 PM</p>
-              </li>
-              <li class="contacts-schedule__item">
-                <p class="contacts-schedule__day">Saturday - Sunday</p>
-                <p class="contacts-schedule__time">08:00 AM - 16:00 PM</p>
-              </li>
-            </ul>
-            <hr size="1px" width="100%" color="#E1E1E1" class="line" />
-            <!-- <div class="line"></div> -->
-            <ul class="contacts-contacts list">
-              <li class="contacts-contacts__item">
-                <a
-                  href="tel:+61(0)383766284"
-                  class="contacts-contacts__link link"
-                >
-                  +61(0) 383 766 284
-                </a>
-              </li>
-              <li class="contacts-contacts__item">
-                <a
-                  href="mailto:noreply@envato.com"
-                  class="contacts-contacts__link link"
-                >
-                  noreply@envato.com</a
-                >
-              </li>
-            </ul>
+    <h2 class="visually-hidden">Contacts</h2>
+    <ul class="contacts-card list">
+      <!-- 1 -->
+      <li class="contacts-card__item">
+        <div class="contacts-representation">
+          <p class="contacts-representation__name">CAFE</p>
+        </div>
+        <div class="contacts-town">
+          <h3 class="contacts-town__name">Chicago</h3>
+          <p class="contacts-town__info">
+            Fusce ut velit laoreet, tempus arcu molestie vulputate
+          </p>
+        </div>
+        <hr size="1px" width="100%" color="#E1E1E1" class="line" />
+        <!-- <div class="line"></div> -->
+        <ul class="contacts-schedule list">
+          <li class="contacts-schedule__item">
+            <p class="contacts-schedule__day">Monday - Friday</p>
+            <p class="contacts-schedule__time">06:00 AM - 10:00 PM</p>
           </li>
-          <!-- 2 -->
-          <li class="contacts-card__item">
-            <div class="contacts-representation add-name">
-              <p class="contacts-representation__name">FOODTRUCK</p>
-            </div>
-            <div class="contacts-town">
-              <h3 class="contacts-town__name">Los Angeles</h3>
-              <p class="contacts-town__info">
-                Fusce ut velit laoreet, tempus arcu molestie vulputate
-              </p>
-            </div>
-            <hr size="1px" width="100%" color="#E1E1E1" class="line" />
-            <!-- <div class="line"></div> -->
-            <ul class="contacts-schedule list">
-              <li class="contacts-schedule__item">
-                <p class="contacts-schedule__day">Monday - Friday</p>
-                <p class="contacts-schedule__time">06:00 AM - 10:00 PM</p>
-              </li>
-              <li class="contacts-schedule__item">
-                <p class="contacts-schedule__day">Saturday - Sunday</p>
-                <p class="contacts-schedule__time">08:00 AM - 16:00 PM</p>
-              </li>
-            </ul>
-            <hr size="1px" width="100%" color="#E1E1E1" class="line" />
-            <!-- <div class="line"></div> -->
-            <ul class="contacts-contacts list">
-              <li class="contacts-contacts__item">
-                <a
-                  href="tel:+61(0)383766284"
-                  class="contacts-contacts__link link"
-                >
-                  +61(0) 383 766 284
-                </a>
-              </li>
-              <li class="contacts-contacts__item">
-                <a
-                  href="mailto:noreply@envato.com"
-                  class="contacts-contacts__link link"
-                >
-                  noreply@envato.com</a
-                >
-              </li>
-            </ul>
-          </li>
-          <!-- 3 -->
-          <li class="contacts-card__item">
-            <div class="contacts-representation">
-              <p class="contacts-representation__name">CAFE</p>
-            </div>
-            <div class="contacts-town">
-              <h3 class="contacts-town__name">New York</h3>
-              <p class="contacts-town__info">
-                Fusce ut velit laoreet, tempus arcu molestie vulputate
-              </p>
-            </div>
-            <hr size="1px" width="100%" color="#E1E1E1" class="line" />
-            <!-- <div class="line"></div> -->
-            <ul class="contacts-schedule list">
-              <li class="contacts-schedule__item">
-                <p class="contacts-schedule__day">Monday - Friday</p>
-                <p class="contacts-schedule__time">06:00 AM - 10:00 PM</p>
-              </li>
-              <li class="contacts-schedule__item">
-                <p class="contacts-schedule__day">Saturday - Sunday</p>
-                <p class="contacts-schedule__time">08:00 AM - 16:00 PM</p>
-              </li>
-            </ul>
-            <hr size="1px" width="100%" color="#E1E1E1" class="line" />
-            <!-- <div class="line"></div> -->
-            <ul class="contacts-contacts list">
-              <li class="contacts-contacts__item">
-                <a
-                  href="tel:+61(0)383766284"
-                  class="contacts-contacts__link link"
-                >
-                  +61(0) 383 766 284
-                </a>
-              </li>
-              <li class="contacts-contacts__item">
-                <a
-                  href="mailto:noreply@envato.com"
-                  class="contacts-contacts__link link"
-                >
-                  noreply@envato.com</a
-                >
-              </li>
-            </ul>
+          <li class="contacts-schedule__item">
+            <p class="contacts-schedule__day">Saturday - Sunday</p>
+            <p class="contacts-schedule__time">08:00 AM - 16:00 PM</p>
           </li>
         </ul>
-      </div>
-    </section>
-  </body>
-</html>
+        <hr size="1px" width="100%" color="#E1E1E1" class="line" />
+        <!-- <div class="line"></div> -->
+        <ul class="contacts-contacts list">
+          <li class="contacts-contacts__item">
+            <a href="tel:+61(0)383766284" class="contacts-contacts__link link">
+              +61(0) 383 766 284
+            </a>
+          </li>
+          <li class="contacts-contacts__item">
+            <a
+              href="mailto:noreply@envato.com"
+              class="contacts-contacts__link link"
+            >
+              noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </li>
+      <!-- 2 -->
+      <li class="contacts-card__item">
+        <div class="contacts-representation add-name">
+          <p class="contacts-representation__name">FOODTRUCK</p>
+        </div>
+        <div class="contacts-town">
+          <h3 class="contacts-town__name">Los Angeles</h3>
+          <p class="contacts-town__info">
+            Fusce ut velit laoreet, tempus arcu molestie vulputate
+          </p>
+        </div>
+        <hr size="1px" width="100%" color="#E1E1E1" class="line" />
+        <!-- <div class="line"></div> -->
+        <ul class="contacts-schedule list">
+          <li class="contacts-schedule__item">
+            <p class="contacts-schedule__day">Monday - Friday</p>
+            <p class="contacts-schedule__time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="contacts-schedule__item">
+            <p class="contacts-schedule__day">Saturday - Sunday</p>
+            <p class="contacts-schedule__time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <hr size="1px" width="100%" color="#E1E1E1" class="line" />
+        <!-- <div class="line"></div> -->
+        <ul class="contacts-contacts list">
+          <li class="contacts-contacts__item">
+            <a href="tel:+61(0)383766284" class="contacts-contacts__link link">
+              +61(0) 383 766 284
+            </a>
+          </li>
+          <li class="contacts-contacts__item">
+            <a
+              href="mailto:noreply@envato.com"
+              class="contacts-contacts__link link"
+            >
+              noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </li>
+      <!-- 3 -->
+      <li class="contacts-card__item">
+        <div class="contacts-representation">
+          <p class="contacts-representation__name">CAFE</p>
+        </div>
+        <div class="contacts-town">
+          <h3 class="contacts-town__name">New York</h3>
+          <p class="contacts-town__info">
+            Fusce ut velit laoreet, tempus arcu molestie vulputate
+          </p>
+        </div>
+        <hr size="1px" width="100%" color="#E1E1E1" class="line" />
+        <!-- <div class="line"></div> -->
+        <ul class="contacts-schedule list">
+          <li class="contacts-schedule__item">
+            <p class="contacts-schedule__day">Monday - Friday</p>
+            <p class="contacts-schedule__time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="contacts-schedule__item">
+            <p class="contacts-schedule__day">Saturday - Sunday</p>
+            <p class="contacts-schedule__time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <hr size="1px" width="100%" color="#E1E1E1" class="line" />
+        <!-- <div class="line"></div> -->
+        <ul class="contacts-contacts list">
+          <li class="contacts-contacts__item">
+            <a href="tel:+61(0)383766284" class="contacts-contacts__link link">
+              +61(0) 383 766 284
+            </a>
+          </li>
+          <li class="contacts-contacts__item">
+            <a
+              href="mailto:noreply@envato.com"
+              class="contacts-contacts__link link"
+            >
+              noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
