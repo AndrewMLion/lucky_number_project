@@ -1,5 +1,13 @@
 .container {
+  // <<<<<<< feature/contacts
   // width: 100%;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // =======
+  // width: 100%;
+  // >>>>>>> main
   margin: 0 auto;
 
   @media screen and (min-width: 320px) {
@@ -9,6 +17,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   @media screen and (min-width: 767.98px) {
     width: 768px;
 
