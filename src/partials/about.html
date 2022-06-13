@@ -43,7 +43,38 @@
             <p>Aliquam erat volutpat. Aenean accumsan.</p>
           </li>
         </ul>
-        <button class="about_btn">
+        <div class="modal is-hidden" data-modal>
+          <button class="modal_btn-close" data-modal-close>
+            <svg class="modal_bnt-close-img" width="8" height="8">
+              <use
+                class="modal_bnt-close-img"
+                href="./images/icons.svg#icon-close-about"
+              ></use>
+            </svg>
+          </button>
+          <ul class="modal_list">
+            <li class="module_text">
+              <p>
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+                justo cursus, faucibus lorem eget, egestas eros.
+              </p>
+            </li>
+            <li class="module_text">
+              <p>
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio
+                elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+                euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+              </p>
+            </li>
+            <li class="module_text">
+              <p>
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+                justo cursus, faucibus lorem eget, egestas eros.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <button class="about_btn" data-modal-open>
           Read more
 
           <svg class="about_btn-arrow" width="10" height="10">
