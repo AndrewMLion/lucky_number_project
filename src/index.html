@@ -11,25 +11,88 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Titan+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Titan+One:wght@400&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="./sass/index.scss" />
+
     <script type="module" src="./index.js"></script>
   </head>
 
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
 
-
-
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/products.html"></include>
     <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/reviews.html"></include>
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
 
+
+    <include src="./partials/madal.html"></include>
+    <include src="./partials/arrow.html"></include>
+
+    <include src="./partials/mob-menu.html"></include>
+
+
+    <!-- slick slider -->
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script defer src="mobile-menu.js"></script>
+    <script type="module" src="./index.js"></script>
+    <script src="./js/slick-slide.js"></script>
+    <script src="./js/modal-window.js"></script>
+<!-- <<<<<<< header -->
+    <script src="./js/scroll.js"></script>
+    <script src="./js/scroll_up.js"></script>
+<!-- ======= -->
+
+<!--     <script src="./js/skroll.js"></script> -->
+
+    <script src="./js/modal-window-about.js"></script>
+
+    <script src="./js/modal-map.js"></script>
+
+<!-- >>>>>>> main -->
   </body>
 </html>
