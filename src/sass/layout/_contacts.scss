@@ -47,12 +47,13 @@
   height: 412px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 
   background-color: #ffffff;
 
   cursor: pointer;
-
   @media screen and(min-width:767.98px) {
     max-width: 224px;
     height: 528px;
