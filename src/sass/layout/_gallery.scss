@@ -9,33 +9,8 @@
 
   @media screen and (min-width: 1280px) {
     height: 430px;
-    width: 1200px;
+    width: 1280px;
   }
-}
-
-.img-effects{
-  transition: transform 650ms;
-  border-radius: 14%;
-}
-
-.img-effects:hover,
-.img-effects:focus {
-  z-index: 1;
-  transform: scale(1.2);
-}
-
-.gallery--main-big-card:hover,
-.gallery--main-big-card:hover {
-  cursor: pointer;
-  z-index: 2;
-  transform: perspective(700px) rotateX(15deg);
-}
-
-.gallery--little-size-card:hover,
-.gallery--little-size-card:focus {
-  cursor: pointer;
-  z-index: 2;
-  transform: perspective(400px) rotateX(20deg);
 }
 
 .gallery {
@@ -91,9 +66,37 @@
   }
 }
 
+
+.gallery__img-effects{
+  transition: transform 650ms;
+  border-radius: 14%;
+
+  &:hover,
+  &:focus{
+    z-index: 1;
+    transform: scale(1.2);
+  }
+
+}
+
+.gallery--main-big-card:hover,
+.gallery--main-big-card:focus {
+  cursor: pointer;
+  z-index: 2;
+  transform: perspective(700px) rotateX(15deg);
+}
+
+.gallery--little-size-card:hover,
+.gallery--little-size-card:focus {
+  cursor: pointer;
+  z-index: 2;
+  transform: perspective(400px) rotateX(20deg);
+}
+
+
 .gallery__product-card-1 {
   position: absolute;
-  left: -1.90%;
+  left: 0%;
   top: 40px;
 
   @media screen and (min-width: 768px) {
@@ -109,7 +112,7 @@
 
 .gallery__product-card-2 {
   position: absolute;
-  left: 13%;
+  left: 14.25%;
   top: 25px;
 
   @media screen and (min-width: 768px) {
@@ -125,8 +128,8 @@
 
 .gallery__product-card-3 {
   position: absolute;
-  left: 13%;
-  top: 65px;
+  left: 14.25%;
+  top: 64px;
 
   @media screen and (min-width: 768px) {
     left: 163px;
@@ -141,7 +144,7 @@
 
 .gallery__product-card-4 {
   position: absolute;
-  left: 27.50%;
+  left: 28.50%;
   top: 0;
 
   @media screen and (min-width: 768px) {
@@ -157,7 +160,7 @@
 
 .gallery__product-card-5 {
   position: absolute;
-  left: 27.50%;
+  left: 28.50%;
   top: 82.50px;
 
   @media screen and (min-width: 768px) {
@@ -173,7 +176,7 @@
 
 .gallery__product-card-6 {
   position: absolute;
-  left: 57.50%;
+  left: 58%;
   top: 28px;
 
   @media screen and (min-width: 768px) {
@@ -189,7 +192,7 @@
 
 .gallery__product-card-7 {
   position: absolute;
-  left: 57.50%;
+  left: 58%;
   top: 68.50px;
 
   @media screen and (min-width: 768px) {
@@ -205,7 +208,7 @@
 
 .gallery__product-card-8 {
   position: absolute;
-  left: 72.50%;
+  left: 72%;
   top: 15px;
 
   @media screen and (min-width: 768px) {
@@ -221,8 +224,8 @@
 
 .gallery__product-card-9 {
   position: absolute;
-  left: 72.50%;
-  top: 56.50px;
+  left: 72%;
+  top: 55.50px;
 
   @media screen and (min-width: 768px) {
     left: 519px;
@@ -237,7 +240,7 @@
 
 .gallery__product-card-10 {
   position: absolute;
-  left: 87.50%;
+  left: 86.50%;
   top: 44px;
 
   @media screen and (min-width: 768px) {
