@@ -228,8 +228,10 @@
   }
 }
 .line {
+  border: 1px solid #e1e1e1;
   margin-top: 24px;
   margin-bottom: 24px;
+
   @media screen and (min-width: 767.98px) {
     margin-top: 32px;
     margin-bottom: 32px;
