@@ -31,3 +31,13 @@ address {
   font-style: normal; /* or */
   font-style: inherit;
 }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+}
+.no-scroll {
+  overflow: hidden;
+}

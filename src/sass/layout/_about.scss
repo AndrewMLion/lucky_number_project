@@ -13,7 +13,9 @@
     transform: translateX(-50%);
     @media screen and (min-width: 1280px) {
       background-image: url(../images/about/bg-img-desktop-min.png);
-      width: 1280px;
+      // width: 1280px;
+      width: 100vw;
+      background-size: cover;
       height: 521px;
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -34,6 +36,8 @@
     @media screen and (max-width: 767px) {
       background-image: url(../images/about/bg-img-mobile-min.png);
       width: 320px;
+      width: 100vw;
+      background-size: contain;
       height: 320px;
       top: 585px;
       @media (min-device-pixel-ratio: 2),
@@ -44,7 +48,6 @@
     }
 
     background-repeat: no-repeat;
-    background-size: contain;
   }
 }
 
@@ -212,15 +215,9 @@
 
   top: 42%;
   right: 25px;
-  // transform: rotate(0deg);
 }
-.modal .about_btn-arrow {
-  transform: rotate(-90deg);
-}
-.modal.is-hidden .about_btn-arrow {
-  transform: rotate(0deg);
-}
-.modal {
+
+.modal-about {
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -228,9 +225,9 @@
   transform: translateY(-50%);
   transition: opacity 250ms;
   background-color: #ffb8ca;
-  // transform: translatey(100%);
+
   border-radius: 10px;
-  padding: 30px 10px;
+  padding: 30px 15px;
   &_list {
     margin: 0;
     padding: 0;
@@ -242,6 +239,7 @@
   @media screen and (min-width: 320px) {
     font-size: 12px;
     line-height: 1.62;
+    max-height: 370px;
   }
 
   @media screen and (min-width: 768px) {
@@ -250,12 +248,15 @@
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
+    max-height: 380px;
   }
   @media screen and (max-width: 767px) {
     max-width: 220px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
-.modal.is-hidden {
+.modal_about.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
