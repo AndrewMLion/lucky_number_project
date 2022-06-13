@@ -250,8 +250,8 @@
   text-align: center;
   padding: 13px 21px;
   border-radius: 20px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+  //   drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   &:hover {
     background-color: #ecebeb;
     color: #d41443;
@@ -355,7 +355,12 @@
   fill: #d41443;
   background-color: #ffffff;
   display: none;
-  padding: 6px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  outline: none;
 
   border-radius: 50%;
   cursor: pointer;
@@ -375,11 +380,17 @@
 .hero_icon__svg {
   height: 6px;
   width: 6px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 1280px) {
     height: 13px;
     width: 13px;
   }
+  &:hover,
+  &:focus {
+    transform: rotate(-90deg);
+  }
 }
+
 .hero-last-img {
   position: absolute;
   z-index: 5;
