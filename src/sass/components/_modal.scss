@@ -46,10 +46,8 @@
   fill: $color-text-red;
   cursor: pointer;
 
+  &:hover,
   &:focus {
-    fill: $color-hoverfocus-red;
-  }
-  &:hover {
     fill: $color-hoverfocus-red;
   }
 }
@@ -77,16 +75,12 @@
   transition: border-color 250 ms, fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:hover,
   &:focus {
     border-color: $color-text-red;
   }
+  &:hover,
   &:focus + .modal-input__icon {
-    fill: $color-text-red;
-  }
-  &:hover {
-    border-color: $color-text-red;
-  }
-  &:hover + .modal-input__icon {
     fill: $color-text-red;
   }
 }
@@ -123,10 +117,7 @@
   transition: background-color 250ms, border 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    background: $color-hoverfocus-gray;
-    border: 1px solid $color-hoverfocus-gray;
-  }
+  &:hover,
   &:focus {
     background: $color-hoverfocus-gray;
     border: 1px solid $color-hoverfocus-gray;
@@ -141,10 +132,7 @@
   border: 1px solid $color-text-white;
   color: $color-text-red;
   text-align: center;
-  &:hover {
-    background: $color-hoverfocus-gray;
-    border: 1px solid $color-hoverfocus-gray;
-  }
+  &:hover,
   &:focus {
     background: $color-hoverfocus-gray;
     border: 1px solid $color-hoverfocus-gray;
@@ -164,16 +152,12 @@
   transition: border-color 250ms, fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:hover,
   &:focus {
     border-color: $color-text-pink;
   }
+  &:hover,
   &:focus + .modal-input__icon {
-    fill: $color-text-pink;
-  }
-  &:hover {
-    border-color: $color-text-pink;
-  }
-  &:hover + .modal-input__icon {
     fill: $color-text-pink;
   }
 }
