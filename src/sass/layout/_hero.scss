@@ -94,15 +94,13 @@
   border-style: none;
   border-radius: 22px;
   padding: 16px 34px;
+  transition: background-color 250ms, color 250ms, box-shadow 250ms,
+    border-radius 250ms;
   @media screen and (min-width: 768px) {
     top: 32px;
     right: 32px;
-
     display: flex;
   }
-  transition: background-color 250ms, color 250ms, box-shadow 250ms,
-    border-radius 250ms;
-
   @media screen and (min-width: 1280px) {
     display: flex;
     top: 40px;
@@ -333,7 +331,6 @@
   font-weight: 400;
   @media screen and (min-width: 768px) {
     display: block;
-    // max-width: 114px;
     font-size: 8px;
     line-height: 1.5;
     margin-bottom: 7px;
