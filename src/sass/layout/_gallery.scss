@@ -29,6 +29,7 @@
     padding-bottom: 60px;
   }
 
+// <<<<<<< cool-gallery
   &--background-gradient {
     position: relative;
   }
@@ -130,11 +131,26 @@
   position: absolute;
   left: 14.25%;
   top: 64px;
+// =======
+//   background: linear-gradient(
+//     to bottom,
+//     $color-background 44%,
+//     $color-background 39.9%,
+//     white 10%
+//   );
+//   background: linear-gradient(
+//     to bottom,
+//     $color-background 44%,
+//     $color-background 39.9%,
+//     white 10%
+//   );
+// >>>>>>> main
 
   @media screen and (min-width: 768px) {
     left: 163px;
     top: 143px;
   }
+// <<<<<<< cool-gallery
 
   @media screen and (min-width: 1280px) {
     left: 279px;
@@ -279,3 +295,6 @@
 //     justify-content: center;
 //   }
 // }
+// =======
+// }
+// >>>>>>> main
