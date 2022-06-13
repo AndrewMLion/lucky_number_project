@@ -47,6 +47,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .mob-menu_btn-wrap {
   text-align: center;
 }
@@ -104,6 +105,8 @@
 
   color: $color-text-white;
 }
-.mob-nav_link.current {
+
+.mob-nav_link:hover,
+.mob-nav_link:focus {
   color: $color-text-red;
 }
