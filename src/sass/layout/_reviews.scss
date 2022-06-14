@@ -1,188 +1,193 @@
-.reviews{
-      padding-top: 40px;
-      padding-bottom: 40px;
+.reviews {
+  padding-bottom: 48px;
 
-     @media screen and (min-width:1280px){
-      padding-top: 60px;
-      padding-bottom: 60px;     
-      }
-      
-      &__client{
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+  }
 
-      @media screen and (min-width:768px){
-        margin-bottom: 20px;    
-      }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 120px;
+  }
 
-      @media screen and (min-width:1280px){
-        margin-bottom: 16px;    
-      }
-      }
+  &__client {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
 
-      &__thumb{
-      position: relative;
-      margin-left: auto;  
-      margin-right: auto;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
       margin-bottom: 16px;
-      padding: 45px 50px 17px 50px;
+    }
+  }
 
-      width: 280px;
-      text-align: center;
-      background-color: $color-background-reviews;
+  &__thumb {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    padding: 45px 50px 17px 50px;
 
-      @media screen and (min-width:768px) {
+    width: 280px;
+    text-align: center;
+    background-color: $color-background-reviews;
+
+    @media screen and (min-width: 768px) {
       width: 620px;
-      padding: 37px 6px 36px 6px;     
-      }
+      padding: 37px 6px 36px 6px;
+    }
 
-      @media (min-width:768px) and (max-width:1279px){
+    @media (min-width: 768px) and (max-width: 1279px) {
       margin-bottom: 4px;
-      }
+    }
 
-      @media screen and (min-width:1280px) {
+    @media screen and (min-width: 1280px) {
       width: 1034px;
-      padding: 45px 107px 31px 105px;     
+      padding: 45px 107px 31px 105px;
+    }
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      top: 30px;
+      left: 53px;
+      opacity: 0.6;
+
+      width: 54px;
+      height: 40px;
+
+      background-image: url('../images/customer-reviews/quotes.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/customer-reviews/quotes@2x.png');
       }
 
-      &::before{
-            position: absolute;
-            display: block;
-            content:"";
-            top: 30px;
-            left: 53px;
-            opacity: 0.6;
+      @media screen and (min-width: 768px) {
+        top: 20px;
+        left: 6px;
+      }
 
-            width: 54px;
-            height: 40px;
+      @media screen and (min-width: 1280px) {
+        top: 32px;
+        left: 105px;
+      }
+    }
 
-            background-image: url('../images/customer-reviews/quotes.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            background-image: url('../images/customer-reviews/quotes@2x.png');
-            }
-            
-            @media screen and (min-width:768px) {
-            top: 20px;
-            left: 6px;    
-            }
-
-            @media screen and (min-width:1280px) {
-            top: 32px;
-            left: 105px;    
-            }
-            } 
-      
-      &--overley{
+    &--overley {
       overflow: hidden;
       height: 256px;
 
-      background-image: repeating-linear-gradient(to bottom, 
-      transparent,
-      transparent 31px,
-      $color-linear-reviews 31px,
-      $color-linear-reviews 32px);
+      background-image: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 31px,
+        $color-linear-reviews 31px,
+        $color-linear-reviews 32px
+      );
 
-      @media (min-width:768px) and (max-width:1279px) {
-      height: 93px;
+      @media (min-width: 768px) and (max-width: 1279px) {
+        height: 93px;
 
-      background-image: repeating-linear-gradient(to bottom, 
-      transparent,
-      transparent 30px,
-      $color-linear-reviews 30px,
-      $color-linear-reviews 31px); 
-      }  
-      
-      @media screen and (min-width:1280px){
-      height: 65px;
-      }
-      }  
-}
-
-      &__text{
-      padding: 5px 8px 9px 15px;
-      margin-bottom: 0;
-
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 2.55;
-      text-align: center;
-
-      color:$color-text-primary;
-
-            @media screen and (min-width:768px) {
-            font-size: 14px;
-            line-height: 2.16;
-            padding: 5px 48px 4px 44px;      
-            }
-
-            @media screen and (min-width:1280px) {
-            font-size: 16px;
-            line-height: 1.86;
-            padding: 2px 35px 0 37px;     
-            }     
+        background-image: repeating-linear-gradient(
+          to bottom,
+          transparent,
+          transparent 30px,
+          $color-linear-reviews 30px,
+          $color-linear-reviews 31px
+        );
       }
 
-      &__adress{
+      @media screen and (min-width: 1280px) {
+        height: 65px;
+      }
+    }
+  }
+
+  &__text {
+    padding: 5px 8px 9px 15px;
+    margin-bottom: 0;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+    text-align: center;
+
+    color: $color-text-primary;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 2.16;
+      padding: 5px 48px 4px 44px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.86;
+      padding: 2px 35px 0 37px;
+    }
+  }
+
+  &__adress {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 16px;
+
+    font-size: 14px;
+    line-height: 1.86;
+
+    color: $color-text-primary;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 20px;
+      margin-bottom: 32px;
+    }
+
+    &::before {
+      content: ' ';
       display: block;
-      text-align: center;
-      padding: 0;
+      width: 32px;
+      height: 4px;
+
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 16px;
 
-      font-size: 14px;
-      line-height: 1.86;
+      background-image: url('../images/customer-reviews/red_points.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
 
-      color: $color-text-primary;
-
-            @media screen and (min-width:768px){
-            font-size: 16px;
-            margin-bottom: 32px;
-            }
-
-            @media screen and (min-width:1280px){
-            font-size: 20px;
-            margin-bottom: 32px;
-            }
-      
-            &::before{
-            content: " ";
-            display: block;
-            width: 32px;
-            height: 4px;
-            
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 16px;
-            
-
-            background-image: url('../images/customer-reviews/red_points.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            background-image: url('../images/customer-reviews/red_points@2x.png');
-            }
-            }
-      }      
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/customer-reviews/red_points@2x.png');
+      }
+    }
+  }
 }
 
 .slick-dots li.slick-active button:before {
-      width: 12px;
-      height: 12px;
-      color: transparent;
-      background-image: url('../images/customer-reviews/house.png');
-      background-repeat:no-repeat ;
-      background-size: contain;
-      background-position: center;
+  width: 12px;
+  height: 12px;
+  color: transparent;
+  background-image: url('../images/customer-reviews/house.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .slick-dots li button:before {

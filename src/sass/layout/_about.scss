@@ -1,6 +1,7 @@
 .about_section {
   position: relative;
-  padding: 60px 0;
+  // padding: 60px 0;
+  padding-bottom: 60px;
 
   background-color: #fff5f6;
 
@@ -23,16 +24,7 @@
         background-image: url(../images/about/bg-img-desktop-2x-min.png);
       }
     }
-    // @media screen and (min-width: 780px) {
-    //   background-image: url(../images/about/bg-img-tablet-min.png);
-    //   width: 768px;
-    //   height: 521px;
-    //   @media (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //     background-image: url(../images/about/bg-img-tablet-2x-min.png);
-    //   }
-    // }
+
     @media screen and (max-width: 767px) {
       background-image: url(../images/about/bg-img-mobile-min.png);
       width: 320px;
@@ -301,6 +293,7 @@
   width: 176px;
   height: 44px;
   border-radius: 22px;
+  margin-top: 40px;
   padding: 0;
   background-color: #ffffff;
   color: #d41443;

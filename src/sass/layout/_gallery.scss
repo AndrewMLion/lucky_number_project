@@ -15,21 +15,18 @@
 
 .gallery {
   padding-bottom: 40px;
-  padding-top: 40px;
 
   background: linear-gradient(#fff5f6 44%, #fff5f6 39.9%, #fff 10%);
 
   @media screen and (min-width: 768px) {
-    padding-top: 42px;
     padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 60px;
     padding-bottom: 60px;
   }
 
-// <<<<<<< cool-gallery
+  // <<<<<<< cool-gallery
   &--background-gradient {
     position: relative;
   }
@@ -67,17 +64,15 @@
   }
 }
 
-
-.gallery__img-effects{
+.gallery__img-effects {
   transition: transform 650ms;
   border-radius: 14%;
 
   &:hover,
-  &:focus{
+  &:focus {
     z-index: 1;
     transform: scale(1.2);
   }
-
 }
 
 .gallery--main-big-card:hover,
@@ -93,7 +88,6 @@
   z-index: 2;
   transform: perspective(400px) rotateX(20deg);
 }
-
 
 .gallery__product-card-1 {
   position: absolute;
@@ -113,7 +107,7 @@
 
 .gallery__product-card-2 {
   position: absolute;
-  left: 14.30%;
+  left: 14.3%;
   top: 25px;
 
   @media screen and (min-width: 768px) {
@@ -129,28 +123,28 @@
 
 .gallery__product-card-3 {
   position: absolute;
-  left: 14.30%;
+  left: 14.3%;
   top: 66px;
-// =======
-//   background: linear-gradient(
-//     to bottom,
-//     $color-background 44%,
-//     $color-background 39.9%,
-//     white 10%
-//   );
-//   background: linear-gradient(
-//     to bottom,
-//     $color-background 44%,
-//     $color-background 39.9%,
-//     white 10%
-//   );
-// >>>>>>> main
+  // =======
+  //   background: linear-gradient(
+  //     to bottom,
+  //     $color-background 44%,
+  //     $color-background 39.9%,
+  //     white 10%
+  //   );
+  //   background: linear-gradient(
+  //     to bottom,
+  //     $color-background 44%,
+  //     $color-background 39.9%,
+  //     white 10%
+  //   );
+  // >>>>>>> main
 
   @media screen and (min-width: 768px) {
     left: 163px;
     top: 143px;
   }
-// <<<<<<< cool-gallery
+  // <<<<<<< cool-gallery
 
   @media screen and (min-width: 1280px) {
     left: 279px;
@@ -160,7 +154,7 @@
 
 .gallery__product-card-4 {
   position: absolute;
-  left: 28.50%;
+  left: 28.5%;
   top: 0;
 
   @media screen and (min-width: 768px) {
@@ -176,7 +170,7 @@
 
 .gallery__product-card-5 {
   position: absolute;
-  left: 28.50%;
+  left: 28.5%;
   top: 83px;
 
   @media screen and (min-width: 768px) {
@@ -209,7 +203,7 @@
 .gallery__product-card-7 {
   position: absolute;
   left: 58%;
-  top: 68.50px;
+  top: 68.5px;
 
   @media screen and (min-width: 768px) {
     left: 430px;
@@ -241,7 +235,7 @@
 .gallery__product-card-9 {
   position: absolute;
   left: 72%;
-  top: 55.50px;
+  top: 55.5px;
 
   @media screen and (min-width: 768px) {
     left: 519px;
@@ -256,7 +250,7 @@
 
 .gallery__product-card-10 {
   position: absolute;
-  left: 86.50%;
+  left: 86.5%;
   top: 44px;
 
   @media screen and (min-width: 768px) {

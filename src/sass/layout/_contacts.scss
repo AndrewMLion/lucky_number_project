@@ -1,5 +1,4 @@
 .contacts {
-  padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 0;
   padding-right: 0;
@@ -21,12 +20,10 @@
   );
 
   @media screen and (min-width: 767.98px) {
-    padding-top: 80px;
     background: linear-gradient(180deg, #ffffff 206px, #fff5f6 206px);
     padding-bottom: 40px;
   }
   @media screen and (min-width: 1279.98px) {
-    padding-top: 120px;
     background: linear-gradient(180deg, #ffffff 223px, #fff5f6 223px);
     padding-bottom: 120px;
   }
