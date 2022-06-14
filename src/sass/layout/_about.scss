@@ -131,11 +131,12 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     margin-left: 32px;
   }
   @media screen and (min-width: 1280px) {
     margin-left: 139px;
+    padding-top: 72px;
   }
 }
 
@@ -169,8 +170,8 @@
   line-height: 1.94;
   letter-spacing: 0.04em;
   color: #907e82;
-  & > p {
-    margin-bottom: 2em;
+  &:not(:last-child) > p {
+    margin-bottom: 32px;
   }
   @media screen and (min-width: 320px) {
     font-size: 12px;
@@ -186,7 +187,7 @@
 }
 
 .about_text-bold {
-  margin-bottom: 32px;
+  display: inline-block;
   color: #000000;
 
   @media screen and (min-width: 320px) {
