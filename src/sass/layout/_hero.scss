@@ -201,7 +201,6 @@
   }
 }
 .hero-button-item {
-  cursor: pointer;
   z-index: 8;
   font-family: inherit;
   margin-right: 8px;
@@ -215,6 +214,7 @@
 }
 
 .hero__btn__first {
+  display: block;
   background-color: $color-text-red;
   color: $color-text-white;
   cursor: pointer;
@@ -232,6 +232,7 @@
   }
 }
 .hero__btn__last {
+  display: block;
   cursor: pointer;
   background-color: $color-text-white;
   border-style: none;
