@@ -69,7 +69,7 @@
 
   cursor: pointer;
   @media screen and(min-width:767.98px) {
-    width: 100%;
+    width: calc((100% - 96px) / 3);
     height: 528px;
     margin-right: 32px;
     margin-bottom: 0;
@@ -85,7 +85,7 @@
     //   }
   }
   @media screen and(min-width:1279.98px) {
-    width: 100%;
+    width: calc((100% - 96px) / 3);
     height: 538px;
     margin-right: 32px;
     padding: 40px;
@@ -93,9 +93,9 @@
     flex-basis: calc((100% - 96px) / 3);
   }
 }
-.contacts-card__item:last-child {
-  margin-bottom: 0;
-}
+// .contacts-card__item:last-child {
+//   margin-bottom: 0;
+// }
 .contacts-representation {
   width: 80px;
   height: 16px;
@@ -263,24 +263,23 @@
     margin-bottom: 32px;
   }
 }
+.contacts-box {
+  margin-bottom: 40px;
+}
 // Кнопки
 .contacts-buttons {
   // margin: 0 auto;
-  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  //margin-bottom: 48px;
   @media screen and (min-width: 768px) {
     width: 380px;
-    // margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: baseline;
   }
   @media screen and (min-width: 1280px) {
     width: 393px;
-    // margin-bottom: 120px;
   }
 }
 .contacts__btn {
