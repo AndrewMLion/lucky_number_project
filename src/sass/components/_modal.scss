@@ -129,8 +129,6 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  background: $color-text-white;
-  border: 1px solid $color-text-white;
   color: $color-text-red;
   text-align: center;
   &:hover,
@@ -148,14 +146,14 @@
   letter-spacing: 0.01em;
   background-color: $color-hoverfocus-gray;
   resize: none;
-  border-color: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(223, 88, 88, 0.1);
   border-radius: 4px;
   transition: border-color 250ms, fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    border-color: $color-text-pink;
+    border-color: $color-text-red;
   }
   &:hover,
   &:focus + .modal-input__icon {
